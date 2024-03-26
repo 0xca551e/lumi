@@ -1,0 +1,11 @@
+---
+version: 1.1.0
+title: convert lab to lchab #3
+file: ./test/lumi_test.gleam
+test_name: lab_to_lchab_3_test
+---
+Lchab(
+  49.50735729920183,
+  79.79801859686272,
+  307.33288738838877,
+)

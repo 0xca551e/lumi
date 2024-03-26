@@ -1,0 +1,11 @@
+---
+version: 1.1.0
+title: convert xyz to rgb #2
+file: ./test/lumi_test.gleam
+test_name: xyz_to_rgb_2_test
+---
+Rgb(
+  36.822205479613636,
+  38.822541136509756,
+  50.82179986293432,
+)

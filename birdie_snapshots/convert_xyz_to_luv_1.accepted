@@ -1,0 +1,11 @@
+---
+version: 1.1.0
+title: convert xyz to luv #1
+file: ./test/lumi_test.gleam
+test_name: xyz_to_luv_1_test
+---
+Luv(
+  25.653514708438443,
+  -4.742091878106749,
+  -62.651021692321635,
+)

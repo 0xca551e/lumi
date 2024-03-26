@@ -1,0 +1,7 @@
+---
+version: 1.1.0
+title: convert lchuv to hsluv #1
+file: ./test/lumi_test.gleam
+test_name: lchuv_to_hsluv_1_test
+---
+Hsluv(166.22, 68.3906082366192, 39.94)

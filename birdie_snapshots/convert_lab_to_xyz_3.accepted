@@ -1,0 +1,11 @@
+---
+version: 1.1.0
+title: convert lab to xyz #3
+file: ./test/lumi_test.gleam
+test_name: lab_to_xyz_3_test
+---
+Xyz(
+  27.934728883578238,
+  14.415897446367207,
+  6.464566860362437,
+)

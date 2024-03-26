@@ -1,0 +1,11 @@
+---
+version: 1.1.0
+title: convert rgb to hsl #2
+file: ./test/lumi_test.gleam
+test_name: rgb_to_hsl_2_test
+---
+Hsl(
+  157.74193548387098,
+  61.386138613861384,
+  60.3921568627451,
+)

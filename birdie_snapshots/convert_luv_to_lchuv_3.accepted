@@ -1,0 +1,11 @@
+---
+version: 1.1.0
+title: convert luv to lchuv #3
+file: ./test/lumi_test.gleam
+test_name: luv_to_lchuv_3_test
+---
+Lchuv(
+  66.84,
+  46.085144027115724,
+  218.0112850866062,
+)

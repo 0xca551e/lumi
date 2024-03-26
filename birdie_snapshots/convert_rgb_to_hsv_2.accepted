@@ -1,0 +1,11 @@
+---
+version: 1.1.0
+title: convert rgb to hsv #2
+file: ./test/lumi_test.gleam
+test_name: rgb_to_hsv_2_test
+---
+Hsv(
+  22.105263157894743,
+  19.895287958115187,
+  74.90196078431373,
+)
