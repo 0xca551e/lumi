@@ -1,11 +1,19 @@
 import gleam/float
+import gleam/int
 import gleam/list
 import gleam/result
 import lumi
 import util
 
-pub fn format_hex(rgb: lumi.Rgb, with_hash _: Bool) {
-  todo
+pub fn to_hex(rgb: lumi.Rgb, with_hash: Bool) {
+  let prefix = case with_hash {
+    True -> "#"
+    False -> ""
+  }
+  let r = int.to_base16(float.round(rgb.r))
+  let g = int.to_base16(float.round(rgb.g))
+  let b = int.to_base16(float.round(rgb.b))
+  prefix <> r <> g <> b
 }
 
 fn hsl_hsv_hclv(rgb: lumi.Rgb) {

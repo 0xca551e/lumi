@@ -1,5 +1,6 @@
 import birdie
 import gleeunit
+import gleeunit/should
 import lumi
 import lumi/colorspace/hsl
 import lumi/colorspace/hsluv
@@ -14,6 +15,14 @@ import pprint
 
 pub fn main() {
   gleeunit.main()
+}
+
+pub fn rgb_to_hex_test() {
+  rgb.to_hex(lumi.Rgb(166.0, 18.0, 16.0), False)
+  |> should.equal("A61210")
+
+  rgb.to_hex(lumi.Rgb(82.0, 25.0, 164.0), True)
+  |> should.equal("#5219A4")
 }
 
 pub fn hsl_to_rgb_1_test() {
