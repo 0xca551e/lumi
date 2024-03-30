@@ -2,6 +2,7 @@ import gleam/float
 import gleam/int
 import gleam/list
 import gleam/result
+import gleam/string
 import lumi
 import util
 
@@ -10,9 +11,14 @@ pub fn to_hex(rgb: lumi.Rgb, with_hash: Bool) {
     True -> "#"
     False -> ""
   }
-  let r = int.to_base16(float.round(rgb.r))
-  let g = int.to_base16(float.round(rgb.g))
-  let b = int.to_base16(float.round(rgb.b))
+  let format = fn(x) {
+    float.round(x)
+    |> int.to_base16()
+    |> string.pad_left(2, "0")
+  }
+  let r = format(rgb.r)
+  let g = format(rgb.g)
+  let b = format(rgb.b)
   prefix <> r <> g <> b
 }
 

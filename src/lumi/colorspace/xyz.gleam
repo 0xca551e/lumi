@@ -23,7 +23,8 @@ pub fn to_rgb(xyz: lumi.Xyz) {
         }
         -. 0.0557
     }
-    *. 255.0
+    |> float.multiply(255.0)
+    |> float.clamp(min: 0.0, max: 255.0)
   }
 
   lumi.Rgb(r: gamma_correct(r), g: gamma_correct(g), b: gamma_correct(b))
