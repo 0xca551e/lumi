@@ -44,6 +44,7 @@ pub fn from_hex(hex: String) -> Result(lumi.Rgb, Nil) {
       "F",
     ]
     s
+    |> string.uppercase()
     |> string.split("")
     |> list.reverse()
     |> list.map(index_of(digits, _))

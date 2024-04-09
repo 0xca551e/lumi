@@ -26,7 +26,7 @@ pub fn rgb_to_hex_test() {
 }
 
 pub fn hex_to_rgb_test() {
-  rgb.from_hex("#FF00FF")
+  rgb.from_hex("#FF00ff")
   |> should.equal(Ok(lumi.Rgb(255.0, 0.0, 255.0)))
 
   rgb.from_hex("00FF00")
