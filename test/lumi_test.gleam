@@ -25,6 +25,20 @@ pub fn rgb_to_hex_test() {
   |> should.equal("#5219A4")
 }
 
+pub fn hex_to_rgb_test() {
+  rgb.from_hex("#FF00FF")
+  |> should.equal(Ok(lumi.Rgb(255.0, 0.0, 255.0)))
+
+  rgb.from_hex("00FF00")
+  |> should.equal(Ok(lumi.Rgb(0.0, 255.0, 0.0)))
+
+  rgb.from_hex("#invalid")
+  |> should.equal(Error(Nil))
+
+  rgb.from_hex("invalid")
+  |> should.equal(Error(Nil))
+}
+
 pub fn hsl_to_rgb_1_test() {
   hsl.to_rgb(lumi.Hsl(h: 187.0, s: 87.0, l: 46.0))
   |> pprint.format()
