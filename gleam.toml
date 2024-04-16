@@ -1,5 +1,5 @@
 name = "lumi"
-version = "1.0.0"
+version = "0.1.0"
 
 description = "Color space conversion"
 licences = ["Apache-2.0"]
